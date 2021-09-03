@@ -64,7 +64,7 @@ namespace LeapYear.Tests
 
             int first = 100;
             int second = 500;
-            int third  = 2000000;
+            int third  = 2100;
 
             //Act
             ArrayList yearList = new ArrayList();
@@ -81,6 +81,29 @@ namespace LeapYear.Tests
         }
 
         //Third rule (years divisible by 400 are leap years)
+
+        [Fact]
+        public void LeapYear_divisibleBy400_true() {
+            //Arrange
+            bool expected = true;
+
+            int first = 400;
+            int second = 800;
+            int third  = 2000;
+
+            //Act
+            ArrayList yearList = new ArrayList();
+            yearList.Add(first);
+            yearList.Add(second);
+            yearList.Add(third);
+
+            //Assert
+            foreach(int year in yearList) 
+            {
+                bool actual = Program.isLeapYear(year);
+                Assert.Equal(expected, actual);
+            }
+        }
 
 
     }
