@@ -6,7 +6,12 @@ namespace LeapYear
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine(":D");
+            Console.WriteLine("Type in a year to see if it is a leap year:");
+
+            int answer = Convert.ToInt32(Console.ReadLine());
+
+            if(isLeapYear(answer)) Console.WriteLine("yay");
+            else                   Console.WriteLine("nay");
         }
         public static bool isLeapYear(int year) 
         {
