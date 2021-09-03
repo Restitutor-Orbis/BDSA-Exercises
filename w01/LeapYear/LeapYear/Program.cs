@@ -8,7 +8,6 @@ namespace LeapYear
         {
             Console.WriteLine(":D");
         }
-
         public static bool isLeapYear(int year) 
         {
             if(year % 100 == 0) 

@@ -30,7 +30,6 @@ namespace LeapYear.Tests
                 Assert.Equal(expected, actual);
             }
         }
-
         [Fact]
         public void LeapYear_divisibleByOther_false()
         {
@@ -104,7 +103,5 @@ namespace LeapYear.Tests
                 Assert.Equal(expected, actual);
             }
         }
-
-
     }
 }
