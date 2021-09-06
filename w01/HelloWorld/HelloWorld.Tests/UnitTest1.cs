@@ -13,12 +13,14 @@ namespace HelloWorld.Tests
             var writer = new StringWriter();
             Console.SetOut(writer);
 
+            string actual = "Hello, World!";
+
             // Act
             Program.Main(new string[0]);
             var output = writer.GetStringBuilder().ToString().Trim();
 
             // Assert
-            Assert.Equal("Hello, World!", output);
+            Assert.Equal(actual, output);
         }
     }
 }
