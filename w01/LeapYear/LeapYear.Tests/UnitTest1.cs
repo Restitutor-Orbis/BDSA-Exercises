@@ -87,7 +87,7 @@ namespace LeapYear.Tests
             //Arrange
             bool expected = true;
 
-            int first = 401;
+            int first = 400;
             int second = 800;
             int third  = 2000;
 
