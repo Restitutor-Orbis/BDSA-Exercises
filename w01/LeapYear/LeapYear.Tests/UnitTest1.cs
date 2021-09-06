@@ -87,7 +87,7 @@ namespace LeapYear.Tests
             //Arrange
             bool expected = true;
 
-            int first = 400;
+            int first = 401;
             int second = 800;
             int third  = 2000;
 
@@ -109,7 +109,7 @@ namespace LeapYear.Tests
         //find a way to simulate a user typing in terminal
         // OR give input and see if the output in terminal is correct.
 
-        
+        /*
         [Fact]
         public void LeapYear_userInput_correctlyIdentified() {
             //Arrange
@@ -128,6 +128,7 @@ namespace LeapYear.Tests
             //Assert
             Assert.Equal(expected, actual);
         }
+        */
         
 
     }
